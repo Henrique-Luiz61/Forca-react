@@ -3,14 +3,14 @@
 }
 
 .container {
-  background-color: green;
+  background-color: #ffffff;
   width: 100%;
   height: 100%;
   position: absolute;
 }
 
 .conteudo-forca {
-  background-color: blue;
+  background-color: #ffffff;
   width: 100%;
   height: 60%;
 
@@ -22,29 +22,41 @@
 }
 
 .div-forca {
-  background-color: red;
+  background-color: #ffffff;
   width: 40%;
   margin-top: 20px;
 }
 .imagem-forca {
   width: 70%;
   height: 100%;
-
   position: inherit;
 }
 
+.div-escolherPalavra {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .botao-palavra {
+  background-color: #27ae60;
+  color: #ffffff;
   width: 200px;
   height: 60px;
 
-  margin-top: 30px;
+  margin-top: 40px;
   border: none;
   border-radius: 8px;
-  background-color: #27ae60;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.palavra {
+  text-decoration: underline;
 }
 
 .container-teclado {
-  background-color: yellow;
+  background-color: #ffffff;
   width: 100%;
   height: 40%;
   position: fixed;
@@ -57,5 +69,18 @@
 }
 
 .div-teclado {
-  background-color: brown;
+  background-color: #ffffff;
+  width: 64%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.botao-letra {
+  background-color: #9faab5;
+  color: black;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  border: 1px solid #7aa7c7;
+
+  font-weight: 700;
 }
