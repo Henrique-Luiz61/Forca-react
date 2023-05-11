@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import forca0 from "./assets/forca0.png";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div className="conteudo-forca">
+        <div className="div-forca">
+          <img className="imagem-forca" src={forca0} alt="forca inicial" />
+        </div>
+
+        <div className="div-botao">
+          <button class="botao-palavra">Escolher palavra</button>
+        </div>
+      </div>
+
+      <div className="container-teclado">
+        <div className="div-teclado">
+          <button className="botao-teclado">a</button>
+        </div>
+      </div>
     </div>
   );
 }
-
-export default App;

@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: green;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.conteudo-forca {
+  background-color: blue;
+  width: 100%;
+  height: 60%;
+
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+.div-forca {
+  background-color: red;
+  width: 40%;
+  margin-top: 20px;
+}
+.imagem-forca {
+  width: 70%;
+  height: 100%;
+
+  position: inherit;
+}
+
+.botao-palavra {
+  width: 200px;
+  height: 60px;
+
+  margin-top: 30px;
+  border: none;
+  border-radius: 8px;
+  background-color: #27ae60;
+}
+
+.container-teclado {
+  background-color: yellow;
+  width: 100%;
+  height: 40%;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div-teclado {
+  background-color: brown;
+}
