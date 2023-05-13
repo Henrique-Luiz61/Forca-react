@@ -1,46 +1,27 @@
-export default function Letras() {
-  const alfabeto = [
-    "a",
-    "b",
-    "c",
-    "d",
-    "e",
-    "f",
-    "g",
-    "h",
-    "i",
-    "j",
-    "k",
-    "l",
-    "m",
-    "n",
-    "o",
-    "p",
-    "q",
-    "r",
-    "s",
-    "t",
-    "u",
-    "v",
-    "w",
-    "x",
-    "y",
-    "z",
-  ];
+import { useState } from "react";
 
-  function habilitarBotao() {
-    alert("Habilitou o botão");
+export default function Letras(props) {
+  const [alfabeto, setAlfabeto] = useState(props.alfabeto);
+
+  function escolherLetra(indice) {
+    const novasSelecionadas = [...props.selecionadas];
+    novasSelecionadas.push(indice);
+    props.setSelecionadas(novasSelecionadas);
   }
 
   return (
     <div className="container-teclado">
       <div className="div-teclado">
-        {alfabeto.map((letra) => (
+        {alfabeto.map((letra, indice) => (
           <button
             key={letra}
-            className="botao-letra"
-            onClick={habilitarBotao}
-            disabled
+            className={`botao-letra ${
+              props.selecionadas.includes(indice)
+                ? "desabilitado"
+                : "habilitado"
+            }`}
+            onClick={() => escolherLetra(indice)}
+            disabled={props.selecionadas.includes(indice) ? true : false}
           >
             {letra}
           </button>

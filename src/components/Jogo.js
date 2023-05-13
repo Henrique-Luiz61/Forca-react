@@ -1,7 +1,12 @@
+import { useState } from "react";
 import forca0 from "../assets/forca0.png";
 
 export default function Jogo(props) {
-  console.log(props);
+  function iniciarJogo() {
+    const novasSelecionadas = [];
+    props.setSelecionadas(novasSelecionadas);
+  }
+
   return (
     <div className="conteudo-forca">
       <div className="div-forca">
@@ -9,7 +14,9 @@ export default function Jogo(props) {
       </div>
 
       <div className="div-escolherPalavra">
-        <button className="botao-palavra">Escolher palavra</button>
+        <button onClick={iniciarJogo} className="botao-palavra">
+          Escolher palavra
+        </button>
 
         <div className="div-palavra">
           <p className="palavra">aaaa</p>

@@ -75,7 +75,6 @@
   flex-wrap: wrap;
 }
 .botao-letra {
-  background-color: #9faab5;
   color: black;
   width: 40px;
   height: 40px;
@@ -83,4 +82,12 @@
   border: 1px solid #7aa7c7;
 
   font-weight: 700;
+}
+
+.desabilitado {
+  background-color: #9faab5;
+}
+
+.habilitado {
+  background-color: #e1ecf4;
 }
