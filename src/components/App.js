@@ -37,18 +37,32 @@ export default function App() {
     21, 22, 23, 24, 25,
   ]);
 
+  const [letraSelecionada, setLselecionada] = useState("");
+  const [numErros, setErros] = useState(0);
+  const [imgForca, setImgForca] = useState("forca0");
+
   return (
     <div className="container">
       <Jogo
         palavras={palavras}
         selecionadas={selecionadas}
         setSelecionadas={setSelecionadas}
+        letraSelecionada={letraSelecionada}
+        setLselecionada={setLselecionada}
+        numErros={numErros}
+        setErros={setErros}
+        imgForca={imgForca}
+        setImgForca={setImgForca}
       />
 
       <Letras
         alfabeto={alfabeto}
         selecionadas={selecionadas}
         setSelecionadas={setSelecionadas}
+        letraSelecionada={letraSelecionada}
+        setLselecionada={setLselecionada}
+        numErros={numErros}
+        setErros={setErros}
       />
     </div>
   );
